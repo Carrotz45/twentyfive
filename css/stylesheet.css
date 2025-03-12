@@ -1,4 +1,9 @@
-.main{
-    display: grid
+@media  and (max-width: 400px) {
+    .main{
+        display: grid;
+        grid-template-rows: 30vh 30vh 40vh;
+        background-color: pink;
 
+    }
 }
+
