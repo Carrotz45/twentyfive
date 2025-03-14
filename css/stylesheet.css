@@ -1,9 +1,46 @@
-@media  and (max-width: 400px) {
-    .main{
+@media screen and (max-width: 500px) {
+    body{
+        background-color: rgb(255, 232, 236);
         display: grid;
-        grid-template-rows: 30vh 30vh 40vh;
-        background-color: pink;
+        grid-template-columns: 50vw 30vh;
+        grid-template-rows: 15vh 30vh 30vh 15vh 30vh 40vh 40vh;
+        grid-template-areas: 
+        "hd hd"
+        "a-p1 img1"
+        "p2 p2"
+        "news news"
+        "u-p3 img2"
+        "lt-pht lt-pht"
+        "ft ft"
+        ; 
+    }
+
+    header{
+        grid-area: hd;
 
     }
+
+    .about_me-p1{
+        grid-area: a-p1;
+    }
+
+    .img1{
+        grid-area: img1;
+
+    }
+
+    .p2{
+        grid-area: p2;
+
+    }
+
 }
 
+body{
+    margin:0%;
+}
+
+h1{
+    margin: 0%;
+    font-size: 20%;
+}
