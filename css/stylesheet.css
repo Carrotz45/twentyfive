@@ -3,7 +3,7 @@
         background-color: white;
         display: grid;
         grid-template-columns: 50vw 50vw;
-        grid-template-rows: 10vh 50vw 50vw 15vh 30vh 40vh 40vh;
+        grid-template-rows: 10vh 50vw 50vw 12vh 50vw 100vw 30vh;
         grid-template-areas: 
         "hd hd"
         "a-p1 img1"
@@ -40,6 +40,10 @@
         margin: 0%;
     }
 
+    img{
+        object-fit: cover;
+    }
+
     .menu_button{
         background-image: url("/img/menu_button.png");
         margin: 1vh;
@@ -51,29 +55,113 @@
 
     .about_me-p1{
         grid-area: a-p1;
-        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
 
-    .img1{
+    img.one{
         grid-area: img1;
-        width:100%;
-
+        width:50vw;
+        height:50vw;
     }
 
     .p2{
         grid-area: p2;
-        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
 
+    .cv_button{
+        height: 75px;
+        width: 150px;
+        align-self: center;
     }
 
     .news{
         grid-area: news;
         font-size: 1.8em;
+        justify-self: center;
+        align-self: center;
     }
 
     .latest{
         grid-area: u-p3;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
+
+
+
+    img.two{
+        grid-area: img2;
+        width:50vw;
+        height:50vw;
+    }
+
+    .latest_pics{
+        grid-area: lt-pht;
+        display: grid;
+        grid-template-rows: 32vw 32vw 32vw;
+        grid-template-columns: 32vw 32vw 32vw;
+        grid-template-areas: 
+        'ltp1 ltp2 ltp3'
+        'ltp4 ltp5 ltp6'
+        'ltp7 ltp8 ltp9';
+        gap: 1vw;
+        margin: 1vw;
+
+    }
+
+    img.ltp1{
+        grid-area:ltp1;
+        width:32vw;
+        height:32vw;
+    }
+    img.ltp2{
+        grid-area:ltp2;
+        width:32vw;
+        height:32vw;
+    }
+    img.ltp3{
+        grid-area:ltp3;
+        width:32vw;
+        height:32vw;
+    }
+    img.ltp4{
+        grid-area:ltp4;
+        width:32vw;
+        height:32vw;
+    }
+    img.ltp5{
+        grid-area:ltp5;
+        width:32vw;
+        height:32vw;
+    }
+    img.ltp6{
+        grid-area:ltp6;
+        width:32vw;
+        height:32vw;
+    }
+    img.ltp7{
+        grid-area:ltp7;
+        width:32vw;
+        height:32vw;
+    }
+    img.ltp8{
+        grid-area:ltp8;
+        width:32vw;
+        height:32vw;
+    }
+    img.ltp9{
+        grid-area:ltp9;
+        width:32vw;
+        height:32vw;
+    }
+
+
 
     footer{
         grid-area: ft;
