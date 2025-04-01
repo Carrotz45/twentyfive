@@ -16,6 +16,22 @@
         ; 
     }
 
+    nav{
+        background-color: lightpink;
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        max-width: 75vw;
+        transition: .3s ease;
+
+        left: -75vw;
+
+    }
+
+    nav.OnScreen{
+        left: 0;
+    }
+
     header{
         grid-area: hd;
         display: flex;
@@ -47,11 +63,13 @@
 
     .menu_button{
         background-image: url("/img/menu_button.png");
+        position: fixed;
         margin: 1vh;
         padding:0%;
         width: 40px;
         height: 40px;
     }
+
 
 
     .about_me-p1{
