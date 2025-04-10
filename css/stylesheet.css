@@ -7,7 +7,7 @@
         grid-template-rows: 10vh 50vw 50vw 12vh 50vw 100vw 30vh;
         grid-template-areas: 
         "hd hd"
-        "a-p1 img1"
+        "p1 img1"
         "p2 p2"
         "news news"
         "u-p3 img2"
@@ -49,8 +49,12 @@
     }
 
     .menu_button{
-        background-image: url("/img/menu_button.png");
-        background-color: #cccccc;
+        background-image: url("../img/menu_button.png");
+        background-color: #cccccc00;
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-position: center;
+
         margin: 1vh;
         padding:0%;
         width: 40px;
@@ -62,8 +66,8 @@
 
 
 
-    .about_me-p1{
-        grid-area: a-p1;
+    .p1{
+        grid-area: p1;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -182,11 +186,11 @@
         background-color: white;
         display: grid;
         grid-template-columns: 50vw 50vw;
-        grid-template-rows: 10vh 50vw 50vw 12vh 50vw 100vw 30vh;
+        grid-template-rows: 10vh 40vw 50vw 12vh 50vw 100vw 30vh;
         grid-template-areas: 
         "hd hd"
-        "a-p1 img1"
-        "p2 p2"
+        "p1 p1"
+        "p2 img1"
         "news news"
         "u-p3 img2"
         "lt-pht lt-pht"
@@ -227,27 +231,40 @@
     }
 
     .menu_button{
-        background-image: url("/img/menu_button.png");
-        background-color: #cccccc;
+        background-image: url("../img/menu_button.png");
+        background-color: #cccccc00;
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-position: center;
+
         margin: 10px;
         padding:0%;
         width: 40px;
         height: 40px;
         border: 0;
         z-index: 1;
-        object-fit: contain;
     }
 
 
 
-    .about_me-p1{
-        grid-area: a-p1;
+    .p1{
+        grid-area: p1;
+
+        background-image: url("../img/img1_background.JPEG");
+        background-color: #cccccc00; 
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        color: white;
+
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
     }
 
     img.one{
+        display:none;
+
         grid-area: img1;
         width:50vw;
         height:50vw;
