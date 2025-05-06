@@ -251,8 +251,6 @@
 
         color: wheat;
 
-        font-family: luxurious;
-
         font-weight: 900;
         letter-spacing: 3px;
         word-spacing: 6px;
@@ -288,7 +286,7 @@
     .p1{
         grid-area: p1;
 
-        background-image: url("../img/img1_background.JPEG");
+        background-image: url("../img/photo-1500673922987-e212871fec22.jpg");
         background-color:#cccccc00;
         background-position: center;
         background-repeat: no-repeat;
