@@ -39,7 +39,6 @@
         transition: .3s ease;
 
         left: -75vw;
-
     }
 
     nav.OnScreen{
@@ -85,8 +84,9 @@
         width: 40px;
         height: 40px;
         border: 0;
-        z-index: 1;
+        
         object-fit: contain;
+        z-index: 1;
     }
 
 
@@ -242,15 +242,12 @@
     
 
     nav{
-        background-color: wheat;
-        position: fixed;
-        height: 100vh;
-        width: 100%;
-        max-width: 25vw;
-        transition: .3s ease;
-
-        left: -75vw;
-
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        float: right;
+        width: 30vw;
+        z-index: 1;
     }
 
     nav.OnScreen{
@@ -258,6 +255,7 @@
     }
 
     header{
+        width: 100vw;
         grid-area: hd;
         display: flex;
         flex-direction: row;
@@ -266,19 +264,15 @@
 
         color: wheat;
 
-        font-weight: 900;
         letter-spacing: 3px;
         word-spacing: 6px;
         font-size: 20px;
     }
 
-    .hero h1{
+    header h1{
         margin: 0%;
+        margin-left: 3vw;
         font-size: 2rem;
-        justify-self: center;
-        width: 100%;
-        text-align: center;
-        position: absolute;
     }
 
     .hero h2{
@@ -292,18 +286,7 @@
     }
 
     .menu_button{
-        background-image: url("../img/menu_button.png");
-        background-color: #ffffff00;
-        background-size:contain;
-        background-repeat: no-repeat;
-        background-position: center;
-
-        margin: 10px;
-        padding:0%;
-        width: 40px;
-        height: 40px;
-        border: 0;
-        z-index: 1;
+        display: none;
     }
 
 
@@ -441,6 +424,24 @@
         grid-area: ft;
         background-color: rgb(64, 38, 14);
     }
+}
+
+.home_button{
+    color: wheat;
+}
+
+.gallery_button{
+
+}
+
+.about_button{
+
+}
+
+a{
+    color: wheat;
+    text-decoration: none;
+    font-family: playfair;
 }
 
 img{

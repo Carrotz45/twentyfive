@@ -4,5 +4,6 @@ const menu = document.querySelector("nav");
 menuButton.addEventListener('click', showMenu);
 
 function showMenu(){
-    menu.classList.toggle('OnScreen')
+    menu.classList.toggle('OnScreen');
+    console.log("clicked")
 }
