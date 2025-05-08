@@ -212,7 +212,7 @@
         background-color:wheat;
         display: grid;
         grid-template-columns: 70vw 30vw;
-        grid-template-rows: 8vh 40vw 50vh 90vh 20vh;
+        grid-template-rows: 10vh 40vw 100vh 180vh 50vh;
         grid-template-areas: 
         "hd hd"
         "hero hero"
@@ -272,13 +272,23 @@
         font-size: 20px;
     }
 
-    h1{
+    .hero h1{
         margin: 0%;
-        font-size: 2em;
+        font-size: 2rem;
         justify-self: center;
         width: 100%;
         text-align: center;
         position: absolute;
+    }
+
+    .hero h2{
+        font-size: 3rem;
+        margin: 0%;
+    }
+
+    .hero p{
+        font-size: 2rem;
+        margin: 0%;
     }
 
     .menu_button{
@@ -341,8 +351,8 @@
         
     }
     .CardList {
-        
-        height: 43vh;
+        margin-top: 40px;
+        height: 60vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -350,7 +360,7 @@
         
     }
     .Card {
-        width: 17%;
+        width: 18%;
         height: 100%;
         background-color: rgb(255, 255, 255);
         box-shadow: 6px 5px 13px -4px rgba(0,0,0,0.75);
@@ -362,15 +372,14 @@
         border-radius: 12px 12px 0px 0px;
     }
     .Card h2 {
-        font-size: 1em;
+        font-size: 1rem;
         color: black;
         font-family: playfair;
         text-align: start;
-        margin: 20px;
+        margin: 10px;
     }
     .Card p {
-        font-size: 50%;
-        
+        font-size: 0.5rem;
         
     }
     .Card button {
@@ -390,6 +399,7 @@
         
     }
     .latest{
+        margin-top: 20vh;
         width: 100%;
         display: flex;
         flex-direction: column;  
@@ -399,9 +409,10 @@
         
     }
 
-
-
-   
+    .latest p{
+        font-size: 1.5rem;
+        margin-bottom: 10vh;
+    }
 
     .latest_pics{
         display: flex;
@@ -430,15 +441,6 @@
         grid-area: ft;
         background-color: rgb(64, 38, 14);
     }
-}
-
-h2{
-    margin:0%;
-    font-size: 1.5em;
-}
-
-p{
-    margin: 0%;
 }
 
 img{
