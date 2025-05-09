@@ -14,31 +14,31 @@
         margin:0%;
         background-color: wheat;
         display: grid;
-        grid-template-columns: 50vw 50vw;
+        grid-template-columns: 100vw;
         grid-template-rows: 10vh 50vw 50vw 12vh 50vw 100vw 30vh;
         grid-template-areas: 
-        "hd hd"
-        "hero img1"
-        "p2 p2"
-        "news news"
-        "u-p3 img2"
-        "lt-pht lt-pht"
-        "ft ft"
+        "hd"
+        "hero"
+        "news"
+        "latest"
+        "ft"
         ; 
 
-        font-family: sora;
+        font-family: playfair;
     }
     
 
     nav{
         background-color: wheat;
         position: fixed;
-        height: 100vh;
+        height: 100%;
         width: 100%;
         max-width: 75vw;
         transition: .3s ease;
-
         left: -75vw;
+        display: flex;
+        flex-direction: column;
+        
     }
 
     nav.OnScreen{
@@ -63,9 +63,26 @@
 
     }
 
+    .hero{
+        grid-area: hero;
+
+        background-image: url("../img/photo-1500673922987-e212871fec22.jpg");
+        background-color:#cccccc00;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        color: rgb(243, 229, 202);
+        
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
     h1{
         margin: 0%;
-        font-size: 2em;
+        font-size: 2rem;
         justify-self: center;
         width: 100%;
         text-align: center;
@@ -151,56 +168,16 @@
 
     }
 
-    img.ltp1{
-        grid-area:ltp1;
-        width:32vw;
-        height:32vw;
-    }
-    img.ltp2{
-        grid-area:ltp2;
-        width:32vw;
-        height:32vw;
-    }
-    img.ltp3{
-        grid-area:ltp3;
-        width:32vw;
-        height:32vw;
-    }
-    img.ltp4{
-        grid-area:ltp4;
-        width:32vw;
-        height:32vw;
-    }
-    img.ltp5{
-        grid-area:ltp5;
-        width:32vw;
-        height:32vw;
-    }
-    img.ltp6{
-        grid-area:ltp6;
-        width:32vw;
-        height:32vw;
-    }
-    img.ltp7{
-        grid-area:ltp7;
-        width:32vw;
-        height:32vw;
-    }
-    img.ltp8{
-        grid-area:ltp8;
-        width:32vw;
-        height:32vw;
-    }
-    img.ltp9{
-        grid-area:ltp9;
-        width:32vw;
-        height:32vw;
-    }
-
 
 
     footer{
         grid-area: ft;
+    }
+
+    a{
+        color: rgba(56, 28, 8, 0.897);
+        text-decoration: none;
+        font-family: playfair;
     }
 }
 
@@ -238,6 +215,10 @@
         border-radius: 10px;
         font-size: 1.5em;
         box-shadow: rgba(0, 0, 0, 0.664) 7px 7px 0px 0px;
+    }
+
+    button a{
+        color: rgba(56, 28, 8, 0.897);
     }
     
 
@@ -424,6 +405,12 @@
         grid-area: ft;
         background-color: rgb(64, 38, 14);
     }
+
+    a{
+        color: wheat;
+        text-decoration: none;
+        font-family: playfair;
+    }
 }
 
 .home_button{
@@ -438,11 +425,6 @@
 
 }
 
-a{
-    color: wheat;
-    text-decoration: none;
-    font-family: playfair;
-}
 
 img{
     object-fit: cover;
